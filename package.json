@@ -1,0 +1,48 @@
+{
+  "name": "node-scaffold",
+  "version": "0.1.0",
+  "description": "A starter for building node-based projects and ies:",
+  "main": "index.js",
+  "scripts": {
+    "clean": "./node_modules/.bin/trash build",
+    "build": "./node_modules/.bin/trash build && ",
+    "watch": "./node_modules/.bin/trash build && ",
+    "lint": "./node_modules/.bin/eslint",
+    "start": "node build/index.js",
+    "test": "./node_modules/.bin/jest --forceExit",
+    "cover": "./node_modules/.bin/jest --coverage --coverageDirectory=coverage"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "Scott Wade <sc0ttwad3@gmail.com> (http://sc0ttwad3.com)",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^2.3.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^22.1.1",
+    "@types/node": "^9.4.0",
+    "jest": "^22.1.4",
+    "trash": "^4.2.1",
+    "trash-cli": "^1.4.0",
+    "ts-jest": "^22.0.2",
+    "tslint": "^5.9.1",
+    "typescript": "^2.8.0-dev.20180130"
+  },
+  "jest": {
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true,
+    "transform": {
+      "^.+\\.tsx?$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js|jsx)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json"
+    ]
+  }
+}
