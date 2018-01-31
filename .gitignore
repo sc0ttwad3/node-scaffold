@@ -1,7 +1,11 @@
 node_modules
 build
+dist
 src/**.js
 
 coverage
 .nyc_output
 *.log
+
+.vscode
+.idea
