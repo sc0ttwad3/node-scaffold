@@ -1,11 +1,11 @@
 {
   "name": "node-scaffold",
   "version": "0.1.0",
-  "description": "A starter for building node-based projects and ies:",
+  "description": "A starter for building node-based projects and libraries",
   "main": "index.js",
   "scripts": {
     "clean": "./node_modules/.bin/trash ./dist",
-    "build": "babel ./src --out-dir ./dist",
+    "build": "npm run clean && babel ./src --out-dir ./dist",
     "start": "npm run build && node ./dist/index.js",
     "test": "./node_modules/.bin/jest --forceExit",
     "cover": "./node_modules/.bin/jest --coverage --coverageDirectory=coverage"
