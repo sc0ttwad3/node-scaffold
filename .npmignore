@@ -2,13 +2,11 @@ src
 config
 examples
 test
-tsconfig.json
-tslint.json
 .travis.yml
 .github
-build/temp
-build/docs
-
+dist/temp
+dist/docs
+o
 coverage
 .nyc_output
 *.log

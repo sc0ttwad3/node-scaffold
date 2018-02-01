@@ -1,5 +1,4 @@
-<img src="https://tse4.mm.bing.net/th?id=OIP.kinfImMcVjQ7kp0vqNVygwFWC2&w=273&h=160&c=7&qlt=90&o=4&dpr=2.5&pid=1.7">
-
+<img src="//tse2.mm.bing.net/th?id=OIP.jP1MtwI7Zldj5e8MhgSEeAD6D6&pid=Api">
 
 ```
 <span>Made with ☕️ by <a href="http://www.sc0ttwad3.com">Scott Wade</a></span>
