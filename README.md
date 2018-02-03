@@ -1,10 +1,6 @@
-<img src="http://tse2.mm.bing.net/th?id=OIP.jP1MtwI7Zldj5e8MhgSEeAD6D6&pid=Api">
-
-```
-<span>Made with ☕️ by <a href="http://www.sc0ttwad3.com">Scott Wade</a></span>
-```
-
 # node-scaffold
+
+Made with ☕️ by <a href="http://www.sc0ttwad3.com">Scott Wade</a>
 
 A starter for building node-based projects and libraries
 
