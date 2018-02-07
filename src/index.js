@@ -1,3 +1,4 @@
+import { _, it } from 'param.macro';
 import chalk from "chalk";
 
 // simple logger

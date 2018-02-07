@@ -1,10 +1,10 @@
 {
   "name": "node-scaffold",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A starter for building node-based projects and libraries",
   "main": "index.js",
   "scripts": {
-    "clean": "./node_modules/.bin/trash ./dist",
+    "clean": "trash ./dist",
     "build": "npm run clean && babel ./src --out-dir ./dist",
     "start": "npm run build && node ./dist/index.js",
     "test": "./node_modules/.bin/jest --forceExit",
@@ -25,6 +25,7 @@
     "babel-preset-env": "^1.6.1",
     "eslint": "^4.16.0",
     "jest": "^22.1.4",
+    "param.macro": "^2.0.0",
     "trash": "^4.2.1",
     "trash-cli": "^1.4.0"
   },
