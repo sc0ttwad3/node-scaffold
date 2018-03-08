@@ -4,9 +4,12 @@
   "description": "A starter for building node-based projects and libraries",
   "main": "index.js",
   "scripts": {
-    "clean": "trash ./dist",
-    "build": "npm run clean && babel ./src --out-dir ./dist",
-    "start": "npm run build && node ./dist/index.js",
+    "clean": "rimraf ./build",
+    "build": "run-s clean build:babel",
+    "build:babel": "babel src --out-dir build --source-maps inline",
+    "watch": "run-s clean watch:babel",
+    "watch:babel": "babel src --out-dir build --source-maps inline --watch",
+    "start": "node build/index.js",
     "test": "./node_modules/.bin/jest --forceExit",
     "cover": "./node_modules/.bin/jest --coverage --coverageDirectory=coverage"
   },
@@ -15,14 +18,16 @@
   ],
   "author": "Scott Wade <sc0ttwad3@gmail.com> (http://sc0ttwad3.com)",
   "license": "MIT",
-  "dependencies": {
-    "chalk": "^2.3.0"
-  },
   "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.40",
+    "@babel/core": "^7.0.0-beta.40",
+    "@babel/node": "^7.0.0-beta.40",
+    "@babel/plugin-proposal-pipeline-operator": "^7.0.0-beta.40",
+    "@babel/preset-env": "^7.0.0-beta.40",
     "@types/jest": "^22.1.1",
     "@types/node": "^9.4.0",
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.6.1",
+    "babel-plugin-macros": "^2.1.0",
+    "chalk": "^2.3.0",
     "eslint": "^4.16.0",
     "jest": "^22.1.4",
     "param.macro": "^2.0.0",
@@ -43,5 +48,9 @@
       "jsx",
       "json"
     ]
+  },
+  "dependencies": {
+    "npm-run-all": "^4.1.2",
+    "rimraf": "^2.6.2"
   }
 }
