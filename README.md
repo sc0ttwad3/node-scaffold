@@ -49,6 +49,6 @@ npm changelog
 
 ### Multiple builds (`main`, `module`)
 
-Module builds are coming soon.
+Need to update this scaffold with updated HTML boilerplate. Module builds are coming soon.
 
 ### Targeting older environments
