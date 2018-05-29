@@ -47,6 +47,8 @@ npm changelog
 
 ## Notes
 
+See latest POCKET links for some best practise npm and related articles that would be of use here.
+
 ### Multiple builds (`main`, `module`)
 
 Need to update this scaffold with updated HTML boilerplate. Module builds are coming soon.
