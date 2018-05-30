@@ -49,6 +49,8 @@ npm changelog
 
 See latest POCKET links for some best practise npm and related articles that would be of use here.
 
+And see if there is a reason to use this scaffold instead of one of the many \*-cli tools?
+
 ### Multiple builds (`main`, `module`)
 
 Need to update this scaffold with updated HTML boilerplate. Module builds are coming soon.
