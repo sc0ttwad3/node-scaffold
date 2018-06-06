@@ -56,3 +56,5 @@ And see if there is a reason to use this scaffold instead of one of the many \*-
 Need to update this scaffold with updated HTML boilerplate. Module builds are coming soon.
 
 ### Targeting older environments
+
+Not sure that this is relevant anymore. Need to use README template.
